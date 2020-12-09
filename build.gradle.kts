@@ -19,7 +19,7 @@ repositories {
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter")
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-	implementation("org.flywaydb:flyway-core:7.0.0")
+	implementation("org.flywaydb:flyway-core:7.3.1")
 	implementation("org.postgresql:postgresql:42.2.14")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-reflect:1.4.20")
@@ -31,8 +31,8 @@ dependencies {
 	testImplementation("org.junit.jupiter:junit-jupiter:5.6.2")
 	testImplementation("org.flywaydb.flyway-test-extensions:flyway-spring-test:7.0.0")
 	testImplementation("io.zonky.test:embedded-database-spring-test:1.6.1")
-	testImplementation("io.zonky.test.postgres:embedded-postgres-binaries-darwin-amd64:12.1.0")
-
+	testImplementation("io.zonky.test.postgres:embedded-postgres-binaries-darwin-amd64:13.1.0")
+	testImplementation("org.testcontainers:postgresql:1.15.0")
 }
 
 tasks.withType<KotlinCompile> {

@@ -10,7 +10,7 @@ import javax.persistence.Id
 import javax.persistence.Table
 
 @Entity
-@Table
+@Table(name = "SAMPLES")
 data class Sample(
         @Id
         @GeneratedValue(strategy = GenerationType.AUTO)
